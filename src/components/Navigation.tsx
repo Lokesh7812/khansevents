@@ -25,7 +25,7 @@ const Navigation = () => {
     { name: 'Contact', href: '/contact' }
   ];
 
-  // helper to decide text color
+  // helper to decide text color for desktop
   const getLinkClass = (href) => {
     if (location.pathname === href) {
       return 'text-[#d4af37] font-semibold'; // active
@@ -40,6 +40,21 @@ const Navigation = () => {
     return 'text-gray-700 hover:text-[#d4af37]';
   };
 
+  // helper to decide text color for mobile menu
+  const getMobileLinkClass = (href) => {
+    if (location.pathname === href) {
+      return 'text-[#d4af37] font-semibold bg-gray-100 px-3 py-2 rounded-lg'; // active mobile
+    }
+    return 'text-gray-700 hover:text-[#d4af37] hover:bg-gray-50 px-3 py-2 rounded-lg transition-colors duration-300';
+  };
+
+  // Function to handle navigation with scroll to top
+  const handleNavigation = (href) => {
+    setIsMenuOpen(false);
+    // Scroll to top when navigating
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -48,9 +63,13 @@ const Navigation = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-3">
+          <Link 
+            to="/" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="flex items-center space-x-3"
+          >
             <img
-              src="/public/WhatsApp Image 2025-09-21 at 16.12.53_b953dd90.jpg"
+              src="/logo.jpg"
               alt="Khans Events Logo"
               className="w-10 h-10 rounded-lg"
             />
@@ -72,6 +91,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.href}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className={`transition-colors duration-300 ${getLinkClass(
                   item.href
                 )}`}
@@ -114,31 +134,31 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg">
-            <div className="px-4 py-4 space-y-4">
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-200">
+            <div className="px-4 py-6 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block w-full text-left transition-colors duration-300 ${getLinkClass(
+                  onClick={() => handleNavigation(item.href)}
+                  className={`block w-full text-left transition-all duration-300 ${getMobileLinkClass(
                     item.href
                   )}`}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="flex space-x-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200 mt-4">
                 <a
                   href="tel:+919600060849"
-                  className="flex items-center space-x-2 bg-[#d4af37] text-[#001f4d] px-4 py-2 rounded-full hover:bg-[#b8941f] transition-colors duration-300"
+                  className="flex items-center justify-center space-x-2 bg-[#d4af37] text-[#001f4d] px-4 py-3 rounded-full hover:bg-[#b8941f] transition-colors duration-300 font-semibold"
                 >
                   <Phone size={18} />
-                  <span>Call</span>
+                  <span>Call Now</span>
                 </a>
                 <a
                   href="https://wa.me/919600060849"
-                  className="flex items-center space-x-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition-colors duration-300"
+                  className="flex items-center justify-center space-x-2 bg-green-500 text-white px-4 py-3 rounded-full hover:bg-green-600 transition-colors duration-300 font-semibold"
                 >
                   <MessageCircle size={18} />
                   <span>WhatsApp</span>

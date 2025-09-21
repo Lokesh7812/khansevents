@@ -57,6 +57,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fix horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Ensure all containers respect viewport width */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -169,6 +188,35 @@ a:focus {
 /* Card hover effects */
 .card-hover {
   @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  /* Ensure all sections fit within viewport */
+  section {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Fix any potential overflow from containers */
+  .max-w-7xl {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Ensure text doesn't overflow */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Fix any absolute positioned elements */
+  .absolute {
+    max-width: 100vw;
+  }
 }
 
 /* Print styles */

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Phone, MessageCircle, ChevronDown, Star, Award, Users, Clock } from 'lucide-react';
@@ -16,26 +15,26 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
         {/* Background Image with Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          className="absolute inset-0 bg-cover bg-center bg-fixed w-full h-full"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 31, 77, 0.85), rgba(0, 31, 77, 0.7)), url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')`
           }}
         />
         
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" 
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight" 
               style={{ fontFamily: 'Playfair Display, serif' }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -53,7 +52,7 @@ const Home = () => {
             </motion.h1>
             
             <motion.p 
-              className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto"
+              className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto px-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.9, duration: 0.6 }}
@@ -62,35 +61,35 @@ const Home = () => {
             </motion.p>
             
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-16 px-4"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
             >
               <motion.a
                 href="tel:+919600060849"
-                className="group flex items-center space-x-3 bg-[#d4af37] text-[#001f4d] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b8941f] transform hover:scale-105 transition-all duration-300 shadow-lg"
+                className="group flex items-center justify-center space-x-2 sm:space-x-3 bg-[#d4af37] text-[#001f4d] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#b8941f] transform hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Phone size={24} className="group-hover:animate-pulse" />
+                <Phone size={20} className="group-hover:animate-pulse" />
                 <span>Call Now</span>
               </motion.a>
               
               <motion.a
                 href="https://wa.me/919600060849"
-                className="group flex items-center space-x-3 bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
+                className="group flex items-center justify-center space-x-2 sm:space-x-3 bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <MessageCircle size={24} className="group-hover:animate-pulse" />
+                <MessageCircle size={20} className="group-hover:animate-pulse" />
                 <span>WhatsApp</span>
               </motion.a>
               
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                 <Link
                   to="/menu"
-                  className="group flex items-center space-x-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-[#001f4d] transform hover:scale-105 transition-all duration-300"
+                  className="group flex items-center justify-center space-x-2 sm:space-x-3 bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white hover:text-[#001f4d] transform hover:scale-105 transition-all duration-300 w-full"
                 >
                   <span>View Menu</span>
                 </Link>
@@ -111,7 +110,7 @@ const Home = () => {
 
         {/* Floating Elements */}
         <motion.div 
-          className="absolute top-1/4 left-10 w-16 h-16 bg-[#d4af37] opacity-20 rounded-full"
+          className="absolute top-1/4 left-4 sm:left-10 w-12 h-12 sm:w-16 sm:h-16 bg-[#d4af37] opacity-20 rounded-full"
           animate={{ 
             scale: [1, 1.2, 1],
             opacity: [0.2, 0.4, 0.2]
@@ -119,7 +118,7 @@ const Home = () => {
           transition={{ duration: 3, repeat: Infinity }}
         />
         <motion.div 
-          className="absolute bottom-1/4 right-10 w-24 h-24 bg-[#d4af37] opacity-10 rounded-full"
+          className="absolute bottom-1/4 right-4 sm:right-10 w-16 h-16 sm:w-24 sm:h-24 bg-[#d4af37] opacity-10 rounded-full"
           animate={{ 
             scale: [1, 1.3, 1],
             opacity: [0.1, 0.3, 0.1]
@@ -146,7 +145,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
@@ -157,13 +156,13 @@ const Home = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-gradient-to-br from-[#001f4d] to-[#003366] p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300"
+                  className="bg-gradient-to-br from-[#001f4d] to-[#003366] p-6 sm:p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300"
                 >
-                  <IconComponent size={48} className="text-[#d4af37] mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-white mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <IconComponent size={40} className="text-[#d4af37] mx-auto mb-3 sm:mb-4" />
+                  <div className="text-2xl sm:text-3xl font-bold text-white mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     {stat.number}
                   </div>
-                  <div className="text-gray-300 font-medium">
+                  <div className="text-sm sm:text-base text-gray-300 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -176,31 +175,31 @@ const Home = () => {
       {/* Quick Overview */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl md:text-4xl font-bold text-[#001f4d] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#001f4d] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Experience the <span className="text-[#d4af37]">Khans Difference</span>
               </h3>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
                 From intimate family gatherings to grand corporate events, we bring authentic flavors 
                 and professional service to every occasion. Our signature dishes like Khans Dum Biryani 
                 and Haryali Chicken have made us Chennai's preferred catering choice.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
                   to="/about"
-                  className="bg-[#001f4d] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#002a5c] transition-colors duration-300 text-center"
+                  className="bg-[#001f4d] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-[#002a5c] transition-colors duration-300 text-center text-sm sm:text-base"
                 >
                   Learn More About Us
                 </Link>
                 <Link
                   to="/services"
-                  className="border-2 border-[#d4af37] text-[#d4af37] px-6 py-3 rounded-full font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 text-center"
+                  className="border-2 border-[#d4af37] text-[#d4af37] px-4 sm:px-6 py-2 sm:py-3 rounded-full font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 text-center text-sm sm:text-base"
                 >
                   Our Services
                 </Link>
@@ -214,19 +213,19 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <img
                   src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Signature Biryani"
-                  className="rounded-2xl shadow-lg"
+                  className="rounded-2xl shadow-lg w-full h-32 sm:h-40 object-cover"
                 />
                 <img
                   src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Event Setup"
-                  className="rounded-2xl shadow-lg mt-8"
+                  className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-32 sm:h-40 object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#d4af37] opacity-20 rounded-full"></div>
+              <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-16 h-16 sm:w-24 sm:h-24 bg-[#d4af37] opacity-20 rounded-full"></div>
             </motion.div>
           </div>
         </div>
@@ -241,25 +240,25 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Ready to Plan Your <span className="text-[#d4af37]">Perfect Event?</span>
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
               Contact us today for a personalized consultation and let us make your celebration unforgettable
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <motion.a
                 href="tel:+919600060849"
-                className="bg-[#d4af37] text-[#001f4d] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300"
+                className="bg-[#d4af37] text-[#001f4d] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300 w-full sm:w-auto text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Call for Consultation
               </motion.a>
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">
                 <Link
                   to="/contact"
-                  className="border-2 border-[#d4af37] text-[#d4af37] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 inline-block"
+                  className="border-2 border-[#d4af37] text-[#d4af37] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 inline-block w-full text-center"
                 >
                   Get Quote
                 </Link>

@@ -35,7 +35,7 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
           className="mb-8"
         >
           <img
-            src="/public/WhatsApp Image 2025-09-21 at 16.12.53_b953dd90.jpg"
+            src="/logo.jpg"
             alt="Khans Events Logo"
             className="w-32 h-32 mx-auto rounded-2xl shadow-2xl"
           />

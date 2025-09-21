@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, Users, Clock, Star, Heart, ChefHat, Target, Trophy } from 'lucide-react';
 
@@ -42,7 +41,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen pt-20 w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,10 +51,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               About <span className="text-[#d4af37]">Khans Events</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Crafting culinary excellence and creating unforgettable memories for over 8 years
             </p>
           </motion.div>
@@ -65,17 +64,17 @@ const About = () => {
       {/* Our Story */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl font-bold text-[#001f4d] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#001f4d] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Our <span className="text-[#d4af37]">Story</span>
               </h2>
-              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-gray-700 leading-relaxed">
                 <p>
                   Khans Events began as a dream to bring authentic South Indian flavors and exceptional 
                   service to every celebration. Founded by <strong>Hussain Khan</strong>, our journey 
@@ -104,30 +103,30 @@ const About = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-3 sm:gap-6">
                 <img
                   src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Professional Kitchen"
-                  className="rounded-2xl shadow-lg"
+                  className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
                   src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Event Setup"
-                  className="rounded-2xl shadow-lg mt-8"
+                  className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
                   src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Signature Dishes"
-                  className="rounded-2xl shadow-lg -mt-8"
+                  className="rounded-2xl shadow-lg -mt-4 sm:-mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
                   src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Team Service"
-                  className="rounded-2xl shadow-lg"
+                  className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
               </div>
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#d4af37] opacity-10 rounded-full"></div>
-              <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-[#001f4d] opacity-10 rounded-full"></div>
+              <div className="absolute -top-4 -right-4 sm:-top-8 sm:-right-8 w-16 h-16 sm:w-32 sm:h-32 bg-[#d4af37] opacity-10 rounded-full"></div>
+              <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 w-12 h-12 sm:w-24 sm:h-24 bg-[#001f4d] opacity-10 rounded-full"></div>
             </motion.div>
           </div>
         </div>
@@ -151,7 +150,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
@@ -162,13 +161,13 @@ const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="bg-white p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300"
+                  className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg text-center transform transition-all duration-300"
                 >
-                  <IconComponent size={48} className={`${stat.color} mx-auto mb-4`} />
-                  <div className="text-3xl font-bold text-[#001f4d] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <IconComponent size={40} className={`${stat.color} mx-auto mb-3 sm:mb-4`} />
+                  <div className="text-2xl sm:text-3xl font-bold text-[#001f4d] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 font-medium">
+                  <div className="text-sm sm:text-base text-gray-600 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -196,7 +195,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
@@ -206,16 +205,16 @@ const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start space-x-6"
+                  className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6"
                 >
-                  <div className="bg-[#d4af37] p-4 rounded-2xl">
-                    <IconComponent size={32} className="text-[#001f4d]" />
+                  <div className="bg-[#d4af37] p-3 sm:p-4 rounded-2xl flex-shrink-0">
+                    <IconComponent size={28} className="text-[#001f4d]" />
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-[#001f4d] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <div className="flex-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#001f4d] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>
                       {value.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                       {value.description}
                     </p>
                   </div>
@@ -245,7 +244,8 @@ const About = () => {
           </motion.div>
 
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#d4af37] opacity-30"></div>
+            {/* Timeline line - hidden on mobile, visible on desktop */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-[#d4af37] opacity-30"></div>
             
             {milestones.map((milestone, index) => (
               <motion.div
@@ -254,25 +254,26 @@ const About = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative flex items-center mb-12 ${
-                  index % 2 === 0 ? 'justify-start' : 'justify-end'
+                className={`relative flex items-center mb-8 md:mb-12 ${
+                  index % 2 === 0 ? 'justify-start md:justify-start' : 'justify-start md:justify-end'
                 }`}
               >
-                <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-                  <div className="bg-white p-6 rounded-2xl shadow-lg">
-                    <div className="text-2xl font-bold text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8'}`}>
+                  <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                    <div className="text-xl sm:text-2xl font-bold text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                       {milestone.year}
                     </div>
-                    <h3 className="text-xl font-semibold text-[#001f4d] mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-[#001f4d] mb-2">
                       {milestone.event}
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-sm sm:text-base text-gray-600">
                       {milestone.description}
                     </p>
                   </div>
                 </div>
                 
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#d4af37] rounded-full border-4 border-white shadow-lg"></div>
+                {/* Timeline dot - hidden on mobile, visible on desktop */}
+                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#d4af37] rounded-full border-4 border-white shadow-lg"></div>
               </motion.div>
             ))}
           </div>
@@ -288,16 +289,16 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Ready to Experience <span className="text-[#d4af37]">Khans Events?</span>
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
               Let us bring our passion for excellence to your next celebration
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <motion.a
                 href="tel:+919600060849"
-                className="bg-[#d4af37] text-[#001f4d] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300"
+                className="bg-[#d4af37] text-[#001f4d] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300 w-full sm:w-auto text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -305,7 +306,7 @@ const About = () => {
               </motion.a>
               <motion.a
                 href="https://wa.me/919600060849"
-                className="border-2 border-[#d4af37] text-[#d4af37] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300"
+                className="border-2 border-[#d4af37] text-[#d4af37] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 w-full sm:w-auto text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

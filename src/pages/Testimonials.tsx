@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Star, Quote, Users, Heart, Award } from 'lucide-react';
 
 const Testimonials = () => {
-  const [selectedVideo, setSelectedVideo] = useState<number | null>(null);
 
-  // Mock video testimonials data - replace with actual video URLs when available
+  // Mock video testimonials data with Instagram URLs - replace with actual video URLs when available
   const videoTestimonials = [
     {
       id: 1,
@@ -15,7 +13,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '2:30',
       rating: 5,
-      preview: 'Amazing biryani and exceptional service for our wedding!'
+      preview: 'Amazing biryani and exceptional service for our wedding!',
+      instagramUrl: 'https://www.instagram.com/p/dummy_wedding_video_1/'
     },
     {
       id: 2,
@@ -25,7 +24,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '1:45',
       rating: 5,
-      preview: 'Professional service and delicious food for 200+ guests'
+      preview: 'Professional service and delicious food for 200+ guests',
+      instagramUrl: 'https://www.instagram.com/p/dummy_corporate_video_2/'
     },
     {
       id: 3,
@@ -35,7 +35,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '1:20',
       rating: 5,
-      preview: 'Kids loved the food, parents loved the service!'
+      preview: 'Kids loved the food, parents loved the service!',
+      instagramUrl: 'https://www.instagram.com/p/dummy_birthday_video_3/'
     },
     {
       id: 4,
@@ -45,7 +46,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '2:10',
       rating: 5,
-      preview: 'Traditional flavors that reminded us of home'
+      preview: 'Traditional flavors that reminded us of home',
+      instagramUrl: 'https://www.instagram.com/p/dummy_housewarming_video_4/'
     },
     {
       id: 5,
@@ -55,7 +57,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '1:55',
       rating: 5,
-      preview: 'Live cooking stations were a huge hit!'
+      preview: 'Live cooking stations were a huge hit!',
+      instagramUrl: 'https://www.instagram.com/p/dummy_office_video_5/'
     },
     {
       id: 6,
@@ -65,7 +68,8 @@ const Testimonials = () => {
       thumbnail: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=400',
       duration: '2:45',
       rating: 5,
-      preview: 'Exceeded all our expectations with quality and taste'
+      preview: 'Exceeded all our expectations with quality and taste',
+      instagramUrl: 'https://www.instagram.com/p/dummy_anniversary_video_6/'
     }
   ];
 
@@ -118,10 +122,10 @@ const Testimonials = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Client <span className="text-[#d4af37]">Testimonials</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Hear what our satisfied clients have to say about their experience with Khans Events
             </p>
           </motion.div>
@@ -131,7 +135,7 @@ const Testimonials = () => {
       {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {stats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
@@ -143,11 +147,11 @@ const Testimonials = () => {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <IconComponent size={48} className="text-[#d4af37] mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-[#001f4d] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+                  <IconComponent size={40} className="text-[#d4af37] mx-auto mb-3 sm:mb-4" />
+                  <div className="text-2xl sm:text-3xl font-bold text-[#001f4d] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
                     {stat.number}
                   </div>
-                  <div className="text-gray-600 font-medium">
+                  <div className="text-sm sm:text-base text-gray-600 font-medium">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -175,7 +179,7 @@ const Testimonials = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {videoTestimonials.map((video, index) => (
               <motion.div
                 key={video.id}
@@ -185,7 +189,12 @@ const Testimonials = () => {
                 viewport={{ once: true }}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                <div className="relative group cursor-pointer" onClick={() => setSelectedVideo(video.id)}>
+                <a 
+                  href={video.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group cursor-pointer block"
+                >
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -199,7 +208,10 @@ const Testimonials = () => {
                   <div className="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-sm">
                     {video.duration}
                   </div>
-                </div>
+                  <div className="absolute top-2 right-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 py-1 rounded text-xs font-semibold">
+                    Instagram
+                  </div>
+                </a>
                 
                 <div className="p-6">
                   <div className="flex items-center mb-2">
@@ -221,45 +233,6 @@ const Testimonials = () => {
             ))}
           </div>
 
-          {/* Video Modal Placeholder */}
-          {selectedVideo && (
-            <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-              <div className="relative max-w-4xl w-full">
-                <button
-                  onClick={() => setSelectedVideo(null)}
-                  className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-300 text-2xl"
-                >
-                  ✕
-                </button>
-                <div className="bg-white rounded-lg p-8 text-center">
-                  <Play size={64} className="text-[#d4af37] mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-[#001f4d] mb-4">
-                    Video Testimonial
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    Video testimonials will be embedded here when available.
-                    Contact us to see our collection of client feedback videos.
-                  </p>
-                  <div className="flex justify-center space-x-4">
-                    <a
-                      href="https://www.instagram.com/_khans_events_officiall"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-[#d4af37] text-[#001f4d] px-6 py-3 rounded-full font-semibold hover:bg-[#b8941f] transition-colors duration-300"
-                    >
-                      View on Instagram
-                    </a>
-                    <button
-                      onClick={() => setSelectedVideo(null)}
-                      className="border-2 border-gray-300 text-gray-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </section>
 
@@ -281,7 +254,7 @@ const Testimonials = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {writtenTestimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -325,18 +298,18 @@ const Testimonials = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               See More <span className="text-[#d4af37]">Client Stories</span>
             </h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto px-4">
               Follow us on Instagram to see more video testimonials, behind-the-scenes content, and client celebrations
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <motion.a
                 href="https://www.instagram.com/_khans_events_officiall"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#d4af37] text-[#001f4d] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300"
+                className="bg-[#d4af37] text-[#001f4d] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#b8941f] transition-colors duration-300 w-full sm:w-auto text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -344,7 +317,7 @@ const Testimonials = () => {
               </motion.a>
               <motion.a
                 href="tel:+919600060849"
-                className="border-2 border-[#d4af37] text-[#d4af37] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300"
+                className="border-2 border-[#d4af37] text-[#d4af37] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#d4af37] hover:text-[#001f4d] transition-all duration-300 w-full sm:w-auto text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
