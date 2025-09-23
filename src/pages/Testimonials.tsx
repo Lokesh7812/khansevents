@@ -187,7 +187,7 @@ const Testimonials = () => {
             const placeholderVideos = [
               // Replace these with actual .mp4 URLs or local files in /public
                '/videos/video1.mp4',
-        '/videos/video2.mov',
+        // '/videos/video2.mov',
         '/videos/video3.mp4',
         '/videos/video4.mp4',
         '/videos/video5.mp4',
