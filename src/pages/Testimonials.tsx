@@ -123,7 +123,7 @@ const Testimonials = () => {
   const VideoCarousel = () => {
     const placeholderVideos = [
       '/videos/video1.mp4',
-      '/videos/video2.mov',
+      // '/videos/video2.mov',
       '/videos/video3.mp4',
       '/videos/video4.mp4',
       '/videos/video5.mp4',
