@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Phone, MessageCircle, ChevronDown, Star, Award, Users, Clock } from 'lucide-react';
+import { Phone, MessageCircle, ChevronDown, Star, Award, Users, Clock, Instagram } from 'lucide-react';
 
 const Home = () => {
   const stats = [
@@ -84,6 +84,18 @@ const Home = () => {
               >
                 <MessageCircle size={20} className="group-hover:animate-pulse" />
                 <span>WhatsApp</span>
+              </motion.a>
+
+              <motion.a
+                href="https://www.instagram.com/_khans_events_officiall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center space-x-2 sm:space-x-3 bg-pink-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg w-full sm:w-auto"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Instagram size={20} className="group-hover:animate-pulse" />
+                <span>Instagram</span>
               </motion.a>
               
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full sm:w-auto">

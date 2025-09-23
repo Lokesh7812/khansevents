@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, MessageCircle, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle, Clock, Send, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -113,7 +113,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Contact Buttons */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <a
                 href="tel:+919600060849"
                 className="flex items-center justify-center space-x-2 bg-[#d4af37] text-[#001f4d] px-6 py-4 rounded-xl font-semibold hover:bg-[#b8941f] transition-colors duration-300"
@@ -127,6 +127,15 @@ const Contact = () => {
               >
                 <MessageCircle size={20} />
                 <span>WhatsApp</span>
+              </a>
+              <a
+                href="https://www.instagram.com/_khans_events_officiall"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center space-x-2 bg-pink-600 text-white px-6 py-4 rounded-xl font-semibold hover:bg-pink-700 transition-colors duration-300"
+              >
+                <Instagram size={20} />
+                <span>Instagram</span>
               </a>
             </div>
           </div>

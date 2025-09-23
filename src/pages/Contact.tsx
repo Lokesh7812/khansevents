@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, MessageCircle, Clock, User } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle, Clock, User, Instagram } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
@@ -61,7 +61,7 @@ const Contact = () => {
       {/* Quick Contact Buttons */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <motion.a
               href="tel:+919600060849"
               className="flex items-center justify-center space-x-4 bg-[#d4af37] text-[#001f4d] p-6 rounded-2xl font-semibold text-lg hover:bg-[#b8941f] transition-all duration-300 shadow-lg"
@@ -85,6 +85,21 @@ const Contact = () => {
               <div>
                 <div className="font-bold">WhatsApp</div>
                 <div className="text-sm opacity-80">Quick Response</div>
+              </div>
+            </motion.a>
+
+            <motion.a
+              href="https://www.instagram.com/_khans_events_officiall"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center space-x-4 bg-pink-600 text-white p-6 rounded-2xl font-semibold text-lg hover:bg-pink-700 transition-all duration-300 shadow-lg"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Instagram size={28} />
+              <div>
+                <div className="font-bold">Instagram</div>
+                <div className="text-sm opacity-80">See Reviews & Reels</div>
               </div>
             </motion.a>
           </div>

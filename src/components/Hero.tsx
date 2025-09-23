@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, ChevronDown } from 'lucide-react';
+import { Phone, MessageCircle, ChevronDown, Instagram } from 'lucide-react';
 
 const Hero = () => {
   const scrollToMenu = () => {
@@ -44,6 +44,16 @@ const Hero = () => {
             >
               <MessageCircle size={24} className="group-hover:animate-pulse" />
               <span>WhatsApp</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/_khans_events_officiall"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center space-x-3 bg-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              <Instagram size={24} className="group-hover:animate-pulse" />
+              <span>Instagram</span>
             </a>
             
             <button
