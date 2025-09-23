@@ -51,15 +51,15 @@ const Home = () => {
               </motion.span>
             </motion.h1>
             
-            <motion.p 
-              className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto px-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.9, duration: 0.6 }}
-            >
-              8+ years of experience • 1723+ orders completed
-            </motion.p>
-            
+           <motion.p 
+  className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto px-4"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.9, duration: 0.6 }}
+>
+  8+ years of experience<span className="block sm:inline"> 1723+ orders completed</span>
+</motion.p>
+
             <motion.div 
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-16 px-4"
               initial={{ opacity: 0, y: 30 }}
