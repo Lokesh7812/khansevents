@@ -186,11 +186,12 @@ const Testimonials = () => {
           {(() => {
             const placeholderVideos = [
               // Replace these with actual .mp4 URLs or local files in /public
-              'https://www.w3schools.com/html/mov_bbb.mp4',
-              'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
-              'https://media.w3.org/2010/05/sintel/trailer.mp4',
-              'https://media.w3.org/2010/05/bunny/trailer.mp4',
-              'https://media.w3.org/2010/05/video/movie_300.mp4'
+               '/videos/video1.mp4',
+        '/videos/video2.mov',
+        '/videos/video3.mp4',
+        '/videos/video4.mp4',
+        '/videos/video5.mp4',
+        '/videos/video6.mp4',
             ];
 
             // Hooks inside IIFE via component function
