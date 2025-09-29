@@ -7,51 +7,51 @@ const Gallery = () => {
   const galleryItems = [
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Wedding Catering Setup',
-      category: 'Events'
+      src: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Chicken Dum Biryani on Banana Leaf',
+      category: 'Food'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Signature Biryani',
+      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Haryali Chicken (Signature)',
       category: 'Food'
     },
     {
       type: 'image',
       src: 'https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Traditional Feast',
+      title: 'Traditional Banana Leaf Feast',
       category: 'Food'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Corporate Event',
-      category: 'Events'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Live Cooking Station',
-      category: 'Service'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Dessert Counter',
+      src: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Ghee Rice and Sides',
       category: 'Food'
     },
     {
       type: 'image',
       src: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Professional Kitchen',
-      category: 'Service'
+      title: 'Chicken 65 (Signature)',
+      category: 'Food'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Elegant Table Setting',
-      category: 'Events'
+      src: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Phirni Sweet (Signature)',
+      category: 'Food'
+    },
+    {
+      type: 'image',
+      src: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Dum Ka Roat',
+      category: 'Food'
+    },
+    {
+      type: 'image',
+      src: 'https://images.pexels.com/photos/2788793/pexels-photo-2788793.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Banana Leaf Service',
+      category: 'Food'
     }
   ];
 

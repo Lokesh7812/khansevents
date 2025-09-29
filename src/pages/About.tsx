@@ -105,23 +105,23 @@ const About = () => {
             >
               <div className="grid grid-cols-2 gap-3 sm:gap-6">
                 <img
-                  src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Professional Kitchen"
+                  src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Chicken Dum Biryani on banana leaf"
                   className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
-                  src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Event Setup"
+                  src="https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Haryali Chicken on banana leaf"
                   className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
-                  src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Signature Dishes"
+                  src="https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Traditional banana leaf feast"
                   className="rounded-2xl shadow-lg -mt-4 sm:-mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
                 <img
-                  src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Team Service"
+                  src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Ghee Rice and sides"
                   className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
                 />
               </div>

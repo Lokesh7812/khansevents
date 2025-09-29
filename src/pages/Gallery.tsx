@@ -9,66 +9,66 @@ const Gallery = () => {
   const galleryItems = [
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Wedding Reception Setup',
-      category: 'events',
-      description: 'Elegant wedding reception with traditional decorations and premium catering setup'
+      src: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Chicken Dum Biryani on Banana Leaf',
+      category: 'food',
+      description: 'Fragrant dum biryani served traditionally on banana leaf'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Signature Khans Dum Biryani',
+      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Haryali Chicken (Signature)',
       category: 'food',
-      description: 'Our famous signature dish prepared with authentic spices and traditional cooking methods'
+      description: 'Our signature Haryali Chicken prepared with fresh herbs and spices'
     },
     {
       type: 'image',
       src: 'https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Traditional South Indian Feast',
+      title: 'Traditional Banana Leaf Feast',
       category: 'food',
       description: 'Complete traditional meal with variety of curries, rice, and accompaniments'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Corporate Event Catering',
-      category: 'events',
-      description: 'Professional catering setup for corporate annual day with 300+ guests'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Live Cooking Station',
-      category: 'service',
-      description: 'Interactive live cooking stations adding entertainment value to events'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Dessert Counter Display',
+      src: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Ghee Rice and Sides',
       category: 'food',
-      description: 'Beautifully arranged dessert counter with traditional and modern sweets'
+      description: 'Ghee rice served with accompaniments on banana leaf'
     },
     {
       type: 'image',
       src: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Professional Kitchen Setup',
-      category: 'service',
-      description: 'State-of-the-art mobile kitchen setup ensuring hygiene and quality'
+      title: 'Chicken 65 (Signature)',
+      category: 'food',
+      description: 'Crispy Chicken 65 served piping hot'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Elegant Table Setting',
-      category: 'events',
-      description: 'Premium table arrangements with attention to detail and aesthetic appeal'
+      src: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Phirni Sweet (Signature)',
+      category: 'food',
+      description: 'Creamy phirni served in traditional style'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Grand Event Hall Setup',
-      category: 'events',
-      description: 'Large-scale event setup with comprehensive catering arrangements'
+      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Haryali Chicken Plating',
+      category: 'food',
+      description: 'Herb-rich Haryali Chicken beautifully plated'
+    },
+    {
+      type: 'image',
+      src: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Dum Ka Roat',
+      category: 'food',
+      description: 'Traditional Dum Ka Roat halwa'
+    },
+    {
+      type: 'image',
+      src: 'https://images.pexels.com/photos/2788793/pexels-photo-2788793.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Banana Leaf Service',
+      category: 'food',
+      description: 'Serving on banana leaves for authentic experience'
     },
     {
       type: 'image',

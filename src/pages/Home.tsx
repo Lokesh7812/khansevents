@@ -22,7 +22,7 @@ const Home = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-fixed w-full h-full"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 31, 77, 0.85), rgba(0, 31, 77, 0.7)), url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')`
+            backgroundImage: `linear-gradient(rgba(0, 31, 77, 0.85), rgba(0, 31, 77, 0.7)), url('https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&fit=crop')`
           }}
         />
         
@@ -227,13 +227,13 @@ const Home = () => {
             >
               <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 <img
-                  src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Signature Biryani"
+                  src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Chicken Dum Biryani on banana leaf"
                   className="rounded-2xl shadow-lg w-full h-32 sm:h-40 object-cover"
                 />
                 <img
-                  src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Event Setup"
+                  src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Banana leaf catering setup"
                   className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-32 sm:h-40 object-cover"
                 />
               </div>
