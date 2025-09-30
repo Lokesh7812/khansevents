@@ -4,35 +4,36 @@ import { ChefHat, Users, Settings, Heart, Clock, Award, Utensils, Calendar } fro
 
 const Services = () => {
   const mainServices = [
-    {
-      icon: ChefHat,
-      title: 'Full-Service Catering',
-      description: 'Complete catering solutions for weddings, corporate events, and family functions with professional presentation and exceptional taste.',
-      features: ['Professional chefs', 'Premium ingredients', 'Elegant presentation', 'Timely service', 'Quality assurance'],
-      image: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=600'
-    },
-    {
-      icon: Settings,
-      title: 'Menu Customization',
-      description: 'Personalized menu planning tailored to your preferences, dietary requirements, and cultural traditions.',
-      features: ['Custom recipes', 'Dietary accommodations', 'Cultural specialties', 'Flexible portions', 'Nutritional guidance'],
-      image: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=600'
-    },
-    {
-      icon: Users,
-      title: 'Live Food Stalls',
-      description: 'Interactive cooking stations and live food counters that add excitement and freshness to your events.',
-      features: ['Live cooking', 'Interactive stations', 'Fresh preparation', 'Entertainment value', 'Crowd engagement'],
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600'
-    },
-    {
-      icon: Heart,
-      title: 'Complete Event Setup',
-      description: 'End-to-end event management with experienced staff and complete kitchen setup for seamless execution.',
-      features: ['Event planning', 'Staff coordination', 'Kitchen setup', 'Quality assurance', 'Cleanup service'],
-      image: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=600'
-    }
-  ];
+  {
+    icon: ChefHat,
+    title: 'Full-Service Catering',
+    description: 'Complete catering solutions for weddings, corporate events, and family functions with professional presentation and exceptional taste.',
+    features: ['Professional chefs', 'Premium ingredients', 'Elegant presentation', 'Timely service', 'Quality assurance'],
+    image: '/videos/briyani2.webp'
+  },
+  {
+    icon: Settings,
+    title: 'Menu Customization',
+    description: 'Personalized menu planning tailored to your preferences, dietary requirements, and cultural traditions.',
+    features: ['Custom recipes', 'Dietary accommodations', 'Cultural specialties', 'Flexible portions', 'Nutritional guidance'],
+    image: '/videos/haryali chicken.jpg'
+  },
+  {
+    icon: Users,
+    title: 'Live Food Stalls',
+    description: 'Interactive cooking stations and live food counters that add excitement and freshness to your events.',
+    features: ['Live cooking', 'Interactive stations', 'Fresh preparation', 'Entertainment value', 'Crowd engagement'],
+    image: '/videos/Chicken 65.jpg'
+  },
+  {
+    icon: Heart,
+    title: 'Complete Event Setup',
+    description: 'End-to-end event management with experienced staff and complete kitchen setup for seamless execution.',
+    features: ['Event planning', 'Staff coordination', 'Kitchen setup', 'Quality assurance', 'Cleanup service'],
+    image: 'https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=400'
+  }
+];
+
 
   const additionalServices = [
     {

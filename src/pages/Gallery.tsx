@@ -16,81 +16,57 @@ const Gallery = () => {
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/haryali chicken.jpg',
       title: 'Haryali Chicken (Signature)',
       category: 'food',
       description: 'Our signature Haryali Chicken prepared with fresh herbs and spices'
     },
+    
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Traditional Banana Leaf Feast',
-      category: 'food',
-      description: 'Complete traditional meal with variety of curries, rice, and accompaniments'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/Ghee rice.jpg',
       title: 'Ghee Rice and Sides',
       category: 'food',
       description: 'Ghee rice served with accompaniments on banana leaf'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/Chicken 65.webp',
       title: 'Chicken 65 (Signature)',
       category: 'food',
       description: 'Crispy Chicken 65 served piping hot'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/Phirni sweet.webp',
       title: 'Phirni Sweet (Signature)',
       category: 'food',
       description: 'Creamy phirni served in traditional style'
     },
+  
+  
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Haryali Chicken Plating',
-      category: 'food',
-      description: 'Herb-rich Haryali Chicken beautifully plated'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Dum Ka Roat',
-      category: 'food',
-      description: 'Traditional Dum Ka Roat halwa'
-    },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/2788793/pexels-photo-2788793.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/mutton Bri.webp',
       title: 'Banana Leaf Service',
       category: 'food',
       description: 'Serving on banana leaves for authentic experience'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Haryali Chicken Special',
+      src: '/videos/briyani3.jpg',
+      title: 'Briyani',
       category: 'food',
       description: 'Our signature Haryali Chicken prepared with fresh herbs and spices'
     },
     {
       type: 'image',
-      src: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: '/videos/briyani2.webp',
       title: 'Team Service Excellence',
       category: 'service',
       description: 'Our professional team ensuring exceptional service quality'
     },
-    {
-      type: 'image',
-      src: 'https://images.pexels.com/photos/2788793/pexels-photo-2788793.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Birthday Celebration Setup',
-      category: 'events',
-      description: 'Colorful and joyful birthday party catering with special arrangements'
-    }
+    
   ];
 
   const filters = [

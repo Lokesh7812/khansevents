@@ -15,7 +15,7 @@ const Testimonials = () => {
       duration: '2:30',
       rating: 5,
       preview: 'Amazing biryani and exceptional service for our wedding!',
-      instagramUrl: 'https://www.instagram.com/p/dummy_wedding_video_1/',
+      instagramUrl: 'https://www.instagram.com/reel/DPMD7eRCB3v/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const Testimonials = () => {
       duration: '1:45',
       rating: 5,
       preview: 'Professional service and delicious food for 200+ guests',
-      instagramUrl: 'https://www.instagram.com/p/dummy_corporate_video_2/',
+      instagramUrl: 'https://www.instagram.com/reel/DPDFJaZCOk_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ const Testimonials = () => {
       duration: '1:20',
       rating: 5,
       preview: 'Kids loved the food, parents loved the service!',
-      instagramUrl: 'https://www.instagram.com/p/dummy_birthday_video_3/',
+      instagramUrl: 'https://www.instagram.com/reel/DO1NSy7Ce8v/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ const Testimonials = () => {
       duration: '2:10',
       rating: 5,
       preview: 'Traditional flavors that reminded us of home',
-      instagramUrl: 'https://www.instagram.com/p/dummy_housewarming_video_4/',
+      instagramUrl: 'https://www.instagram.com/reel/DOzePsnkrLX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
     {
       id: 5,
@@ -59,11 +59,11 @@ const Testimonials = () => {
       client: 'StartUp Hub',
       event: 'Office Opening',
       thumbnail:
-        'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400',
+        'https://www.instagram.com/reel/DObj61EknfX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
       duration: '1:55',
       rating: 5,
       preview: 'Live cooking stations were a huge hit!',
-      instagramUrl: 'https://www.instagram.com/p/dummy_office_video_5/',
+      instagramUrl: 'https://www.instagram.com/reel/DOgn9FlCHBE/?utm_source=ig_web_copy_link',
     },
     {
       id: 6,
@@ -75,7 +75,7 @@ const Testimonials = () => {
       duration: '2:45',
       rating: 5,
       preview: 'Exceeded all our expectations with quality and taste',
-      instagramUrl: 'https://www.instagram.com/p/dummy_anniversary_video_6/',
+      instagramUrl: 'https://www.instagram.com/reel/DOGvyKziVvv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
   ];
 

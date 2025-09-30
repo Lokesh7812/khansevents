@@ -104,27 +104,28 @@ const About = () => {
               className="relative"
             >
               <div className="grid grid-cols-2 gap-3 sm:gap-6">
-                <img
-                  src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Chicken Dum Biryani on banana leaf"
-                  className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
-                />
-                <img
-                  src="https://images.pexels.com/photos/1199958/pexels-photo-1199958.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Haryali Chicken on banana leaf"
-                  className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
-                />
-                <img
-                  src="https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Traditional banana leaf feast"
-                  className="rounded-2xl shadow-lg -mt-4 sm:-mt-8 w-full h-24 sm:h-32 md:h-40 object-cover"
-                />
-                <img
-                  src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Ghee Rice and sides"
-                  className="rounded-2xl shadow-lg w-full h-24 sm:h-32 md:h-40 object-cover"
-                />
-              </div>
+  <img
+    src='/videos/briyani2.webp'
+    alt="Chicken Dum Biryani on banana leaf"
+    className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+  />
+  <img
+    src='/videos/briyani3.jpg'
+    alt="Haryali Chicken on banana leaf"
+    className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+  />
+  <img
+    src='/videos/Chicken 65.webp'
+    alt="Traditional banana leaf feast"
+    className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+  />
+  <img
+    src='/videos/Ghee rice.jpg'
+    alt="Ghee Rice and sides"
+    className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+  />
+</div>
+
               <div className="absolute -top-4 -right-4 sm:-top-8 sm:-right-8 w-16 h-16 sm:w-32 sm:h-32 bg-[#d4af37] opacity-10 rounded-full"></div>
               <div className="absolute -bottom-4 -left-4 sm:-bottom-8 sm:-left-8 w-12 h-12 sm:w-24 sm:h-24 bg-[#001f4d] opacity-10 rounded-full"></div>
             </motion.div>
