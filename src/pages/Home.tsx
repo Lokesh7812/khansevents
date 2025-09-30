@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { Phone, MessageCircle, ChevronDown, Star, Award, Users, Clock, Instagram } from 'lucide-react';
 
@@ -16,6 +17,22 @@ const Home = () => {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
+      <SEO
+        title="Khan Events | Best Catering in Chennai – Weddings, Corporate, Parties"
+        description="Premium catering in Chennai and Tamil Nadu. Specializing in biryani catering, weddings, corporate events, and parties across Anna Nagar, Kodambakkam, Velachery, and Sholinganallur."
+        keywords={[
+          'best catering service in Chennai',
+          'biryani catering Chennai',
+          'briyani catering Chennai',
+          'wedding catering Chennai',
+          'corporate catering Chennai',
+          'Anna Nagar catering',
+          'Kodambakkam catering',
+          'Velachery catering',
+          'Sholinganallur catering'
+        ]}
+        canonical="https://khansevents.com/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden w-full">
         {/* Background Image with Overlay */}
@@ -230,11 +247,13 @@ const Home = () => {
                   src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Chicken Dum Biryani on banana leaf"
                   className="rounded-2xl shadow-lg w-full h-32 sm:h-40 object-cover"
+                  loading="lazy" decoding="async" fetchpriority="low"
                 />
                 <img
                   src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=400"
                   alt="Banana leaf catering setup"
                   className="rounded-2xl shadow-lg mt-4 sm:mt-8 w-full h-32 sm:h-40 object-cover"
+                  loading="lazy" decoding="async" fetchpriority="low"
                 />
               </div>
               <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-16 h-16 sm:w-24 sm:h-24 bg-[#d4af37] opacity-20 rounded-full"></div>

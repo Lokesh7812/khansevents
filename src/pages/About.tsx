@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import { Award, Users, Clock, Star, Heart, ChefHat, Target, Trophy } from 'lucide-react';
 
 const About = () => {
@@ -42,6 +43,16 @@ const About = () => {
 
   return (
     <div className="min-h-screen pt-20 w-full overflow-x-hidden">
+      <SEO
+        title="About Khan Events | Premium Catering in Chennai"
+        description="Learn about Khan Events – over 8 years of delivering authentic biryani and premium catering services across Chennai and Tamil Nadu."
+        keywords={[
+          'about Khan Events',
+          'best caterer Chennai',
+          'biryani caterer Chennai'
+        ]}
+        canonical="https://khansevents.com/about"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,21 +119,25 @@ const About = () => {
     src='/videos/briyani2.webp'
     alt="Chicken Dum Biryani on banana leaf"
     className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+    loading="lazy" decoding="async" fetchpriority="low"
   />
   <img
     src='/videos/briyani3.jpg'
     alt="Haryali Chicken on banana leaf"
     className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+    loading="lazy" decoding="async" fetchpriority="low"
   />
   <img
     src='/videos/Chicken 65.webp'
     alt="Traditional banana leaf feast"
     className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+    loading="lazy" decoding="async" fetchpriority="low"
   />
   <img
     src='/videos/Ghee rice.jpg'
     alt="Ghee Rice and sides"
     className="rounded-2xl shadow-lg w-full h-40 sm:h-56 md:h-72 object-cover"
+    loading="lazy" decoding="async" fetchpriority="low"
   />
 </div>
 

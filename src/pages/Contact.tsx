@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, MessageCircle, Clock, User, Instagram } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const contactInfo = [
@@ -36,6 +37,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Contact Khan Events | Catering in Chennai – Call 9600060849"
+        description="Contact Khan Events for premium catering in Chennai. Phone: +91 9600060849, Email: khanseventsofficial@gmail.com, Instagram: @_khans_events_officiall."
+        keywords={["contact Khan Events", "catering contact Chennai", "call 9600060849"]}
+        canonical="https://khansevents.com/contact"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

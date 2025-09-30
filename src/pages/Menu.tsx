@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, Utensils, Coffee, Cake, Droplets, ChefHat } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('signature');
@@ -180,6 +181,12 @@ const Menu = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Menu | Khan Events – Biryani Catering and Authentic Menus in Chennai"
+        description="Explore Khan Events' signature biryani, vegetarian and non-vegetarian menus, live stalls, and desserts. Perfect for weddings, corporate events, and parties in Chennai."
+        keywords={["menu", "biryani catering menu", "catering menu Chennai"]}
+        canonical="https://khansevents.com/menu"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

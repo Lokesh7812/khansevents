@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Play, Camera, Users, ChefHat, Award } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -89,6 +90,12 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Gallery | Khan Events – Catering Photos and Event Highlights"
+        description="Browse photos of our signature biryani, live counters, and event setups across Chennai."
+        keywords={["gallery", "catering photos", "biryani photos Chennai"]}
+        canonical="https://khansevents.com/gallery"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -186,6 +193,7 @@ const Gallery = () => {
                       src={item.src}
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      loading="lazy" decoding="async" fetchpriority="low"
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
                       <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center p-4">

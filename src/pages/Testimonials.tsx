@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Star, Quote, Users, Heart, Award, X } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Testimonials = () => {
   // Mock video testimonials data with Instagram URLs - replace with actual video URLs when available
@@ -53,18 +54,7 @@ const Testimonials = () => {
       preview: 'Traditional flavors that reminded us of home',
       instagramUrl: 'https://www.instagram.com/reel/DOzePsnkrLX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     },
-    {
-      id: 5,
-      title: 'Office Inauguration',
-      client: 'StartUp Hub',
-      event: 'Office Opening',
-      thumbnail:
-        'https://www.instagram.com/reel/DObj61EknfX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-      duration: '1:55',
-      rating: 5,
-      preview: 'Live cooking stations were a huge hit!',
-      instagramUrl: 'https://www.instagram.com/reel/DOgn9FlCHBE/?utm_source=ig_web_copy_link',
-    },
+    
     {
       id: 6,
       title: 'Anniversary Celebration',
@@ -233,6 +223,12 @@ const Testimonials = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Testimonials | Khan Events – Reviews and Video Feedback"
+        description="Read and watch client testimonials about Khan Events' catering in Chennai, including weddings, corporate events, and parties."
+        keywords={["testimonials", "catering reviews Chennai", "biryani catering reviews"]}
+        canonical="https://khansevents.com/testimonials"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -338,6 +334,7 @@ const Testimonials = () => {
                       src={video.thumbnail}
                       alt={video.title}
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy" decoding="async" fetchpriority="low"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300 flex items-center justify-center">
                       <div className="bg-[#d4af37] rounded-full p-4 group-hover:scale-110 transition-transform duration-300">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChefHat, Users, Settings, Heart, Clock, Award, Utensils, Calendar } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Services = () => {
   const mainServices = [
@@ -87,6 +88,12 @@ const Services = () => {
 
   return (
     <div className="min-h-screen pt-20">
+      <SEO
+        title="Services | Khan Events Catering in Chennai"
+        description="Full-service catering, menu customization, live food stalls, and complete event setups across Chennai. Specializing in biryani catering for weddings, corporate, and family events."
+        keywords={['services', 'catering services Chennai', 'biryani catering services']}
+        canonical="https://khansevents.com/services"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-[#001f4d] to-[#003366]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -141,6 +148,7 @@ const Services = () => {
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      loading="lazy" decoding="async" fetchpriority="low"
                     />
                   </div>
                   
@@ -255,6 +263,7 @@ const Services = () => {
                       src={eventType.image}
                       alt={eventType.title}
                       className="w-full h-48 md:h-full object-cover"
+                      loading="lazy" decoding="async" fetchpriority="low"
                     />
                   </div>
                   <div className="md:w-2/3 p-6">
