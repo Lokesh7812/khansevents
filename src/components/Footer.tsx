@@ -101,12 +101,15 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8 mt-12">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2025 Khans Events. All rights reserved. | Owned by Hussain Khan
+              © 2025 Khans Events. All rights reserved.
+              
             </div>
             
+            
+            <div className="text-gray-400 text-sm">Designed and Developed By Lokesh Founder of TecLanC</div>
             <div className="flex items-center space-x-6">
               <a
-                href="https://www.instagram.com/_khans_events_officiall"
+                href="https://www.instagram.com/tec_loke"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-400 hover:text-[#d4af37] transition-colors duration-300"
