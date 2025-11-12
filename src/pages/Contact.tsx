@@ -8,9 +8,9 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Address',
-      content: '31/19, West Cemetery Road, Old Washermenpet, Chennai – 600021',
+      content: '340, 341, 2nd Ave, G Block, Ranganathan Garden, Anna Nagar, Chennai',
       action: 'View on Google Maps',
-      link: 'https://share.google/a5RAzD6PNT8gbYLKc'
+      link: 'https://share.google/iqRk2lXiEEnKnbgS9'
     },
     {
       icon: Phone,
@@ -217,11 +217,12 @@ const Contact = () => {
               Our Address
             </h3>
             <p className="text-lg text-gray-700 mb-6">
-              31/19, West Cemetery Road, Old Washermenpet<br />
-              Chennai – 600021, Tamil Nadu, India
+               340, 341, 2nd Ave, G Block,<br />
+                     Ranganathan Garden, Anna Nagar, <br />
+                    Chennai, Tamil Nadu 600040
             </p>
             <motion.a
-              href="https://share.google/a5RAzD6PNT8gbYLKc"
+              href="https://share.google/iqRk2lXiEEnKnbgS9"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-[#d4af37] text-[#001f4d] px-6 py-3 rounded-full font-semibold hover:bg-[#b8941f] transition-colors duration-300"

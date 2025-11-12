@@ -37,9 +37,9 @@ const Footer = () => {
                 <MapPin size={18} className="text-[#d4af37] mt-1" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    31/19, West Cemetery Road,<br />
-                    Old Washermenpet,<br />
-                    Chennai – 600021
+                    340, 341, 2nd Ave, G Block,<br />
+                     Ranganathan Garden, Anna Nagar, <br />
+                    Chennai, Tamil Nadu 600040
                   </p>
                 </div>
               </div>
